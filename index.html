@@ -1,0 +1,137 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Flexbox Challenge</title>
+    <style>
+        *{
+            font-weight: 700;
+            font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+            color: white;
+            
+        }
+        .block-1{
+            width: 33%;
+            background: rgb(240, 135, 97);
+            border-radius: 5px;
+            margin-right: 15px;
+
+        }
+        .same{
+            color: rgb(240, 135, 97);
+            background-color: white;
+            margin: 4px;
+            border-radius: 5px;
+            padding: 8px;
+            font-size: 18px;
+        }
+        .flex-container-1, .flex-container-2, .flex-container-3  {
+            display: flex;
+        }
+        #num-1, #num-2, #num-3 {
+            flex-basis: 120px;
+        }
+        #num-4, #num-5, #num-6, #num-7{
+            flex-basis: 84px;
+        }
+        #num-8, #num-9, #num-10, #num-11, #num-12{
+            flex-basis: 62px;
+        }
+        .block-2{
+            width: 33%;
+            background: rgb(240, 135, 97);
+            border-radius: 5px;
+            height: 166px;
+            
+        }
+        #flex-1{
+            display: flex;
+            justify-content: space-around;
+            margin: 0 8px;
+        }
+        #flex-2{
+            margin: 8px 0 ;
+            display: flex;
+            height: 50px;
+            justify-content: space-around;
+            
+        }
+        .second{
+            background: rgb(240, 135, 97);
+            border-radius: 5px;
+            width: 24%;
+            font-size: 28px;
+            
+        }
+        .third{
+            background: rgb(240, 135, 97);
+            border-radius: 5px;
+            width: 19%;
+            font-size: 28px;
+            
+        }
+        #flex-3{
+            margin: 5px 0 ;
+            display: flex;
+            height: 50px;
+            justify-content: space-around;
+        }
+        #left{
+            margin-left: 15px;
+            font-size: 28px;
+        }
+        #size{
+            font-size: 28px;
+        }
+        .style{
+            font-size: 28px;
+        }
+    </style>
+
+</head>
+<body>
+    <div id="flex-1">
+    <div class="block-1">
+        <div class="style">1</div>
+        <div class="flex-container-1">
+        <div class="same" id="num-1">1</div>
+        <div class="same" id="num-2">2</div>
+        <div class="same" id="num-3">3</div>
+     </div>
+     <div class="flex-container-2">
+        <div class="same" id="num-4">1</div>
+        <div class="same" id="num-5">2</div>
+        <div class="same" id="num-6">3</div>
+        <div class="same" id="num-7">4</div>
+     </div>
+     <div class="flex-container-3">
+        <div class="same" id="num-8">1</div>
+        <div class="same" id="num-9">2</div>
+        <div class="same" id="num-10">3</div>
+        <div class="same" id="num-11">4</div>
+        <div class="same" id="num-12">5</div>
+     </div>
+    </div>
+    <br>
+    <div class="block-2" id="size">2</div>
+    <br>
+    <div class="block-2" id="left">3</div>
+    <br>
+</div>
+   <div id="flex-2">
+       <div class="second">1</div>
+       <div class="second">2</div>
+       <div class="second">3</div>
+       <div class="second">4</div>
+   </div>
+   <div id="flex-3">
+       <div class="third">1</div>
+       <div class="third">2</div>
+       <div class="third">3</div>
+       <div class="third">4</div>
+       <div class="third">5</div>
+   </div>
+</body>
+</html>
